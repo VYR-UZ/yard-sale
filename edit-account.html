@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .title {
+        text-align: start;
+        margin-bottom: 32px;
+      }
+      .form div {
+        display: flex;
+        flex-direction: column;
+      }
+      @media (max-width: 640px) {
+        .form-container {
+          height: 100%;
+        }
+        .form {
+          height: 100%;
+          justify-content: space-between;
+        }
+      }
+    </style>
+    <title>Editar cuenta</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="form-container">
+        <h1 class="title">My account</h1>
+
+        <form action="/" class="form">
+          <div>
+            <label for="name" class="label">Name</label>
+            <p class="value">Paulo Vyruz</p>
+
+            <label for="email" class="label">Email address</label>
+            <p class="value">myemail@gmail.com</p>
+
+            <label for="password" class="label">Password</label>
+            <p class="value">*********</p>
+          </div>
+
+          <input
+            type="submit"
+            value="Edit"
+            class="secondary-button login-button"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

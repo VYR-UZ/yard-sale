@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .title {
+        text-align: start;
+        margin-bottom: 32px;
+      }
+      .form div {
+        display: flex;
+        flex-direction: column;
+      }
+      @media (max-width: 640px) {
+        .form-container {
+          height: 100%;
+        }
+        .form {
+          height: 100%;
+          justify-content: space-between;
+        }
+      }
+    </style>
+    <title>Crear cuenta</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="form-container">
+        <h1 class="title">My account</h1>
+
+        <form action="/" class="form">
+          <div>
+            <label for="name" class="label">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="input input-name"
+              placeholder="Paulo Vyruz"
+            />
+
+            <label for="email" class="label">Email address</label>
+            <input
+              type="email"
+              id="email"
+              class="input input-email"
+              placeholder="myemail@gmail.com"
+            />
+
+            <label for="password" class="label">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="input input-pass"
+              placeholder="********"
+            />
+          </div>
+
+          <input
+            type="submit"
+            value="create"
+            class="primary-button login-button"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
